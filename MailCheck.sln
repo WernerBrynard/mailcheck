@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailCheck", "MailCheck\MailCheck.csproj", "{4537E786-47A1-4E6A-B6E6-5CB4A4A7A34B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4537E786-47A1-4E6A-B6E6-5CB4A4A7A34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4537E786-47A1-4E6A-B6E6-5CB4A4A7A34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4537E786-47A1-4E6A-B6E6-5CB4A4A7A34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4537E786-47A1-4E6A-B6E6-5CB4A4A7A34B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B1AC8CF-94CF-4C6C-97A9-46DEB1B85D67}
+	EndGlobalSection
+EndGlobal
