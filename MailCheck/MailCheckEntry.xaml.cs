@@ -80,9 +80,9 @@ namespace MailCheck
         private void CheckEmail()
         {
             if (mailCheck == null)
-                return;
+                mailCheck = new MailCheck();
 
-            if (!String.IsNullOrEmpty(entry.Text) && entry.Text.Length <= 3)
+            if (!String.IsNullOrEmpty(entry.Text) && entry.Text.Length > 3)
             {
                 string result = mailCheck.Run(entry.Text, null, null);
 
