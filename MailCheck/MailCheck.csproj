@@ -36,12 +36,12 @@
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <PackageId>MailCheck</PackageId>
-    <PackageVersion Condition="'$(PackageVersion)' == ''">1.0.1</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">1.0.3</PackageVersion>
     <Title>MailCheck</Title>
     <Authors>Werner Brynard</Authors>
     <Owners>Werner Brynard</Owners>
-    <Summary>Xamarin Forms version of https://github.com/mailcheck</Summary>
-    <Description>Xamarin Forms version of https://github.com/mailcheck</Description>
+    <Summary>A simple Entry custom renderer for Xamarin Forms that  suggests popular email addresses.</Summary>
+    <Description>A simple Entry custom renderer for Xamarin Forms that  suggests popular email addresses.</Description>
     <PackageReleaseNotes>
     </PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/WernerBrynard/mailcheck</PackageProjectUrl>
