@@ -93,7 +93,7 @@ namespace MailCheck
 
                     mailCheckResponse = result;
 
-                    label.Text = $"Did you mean: {result}?";
+                    label.Text = $"Did you mean {result}?";
                 }
                 else
                 {

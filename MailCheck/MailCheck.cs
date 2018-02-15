@@ -8,13 +8,13 @@ namespace MailCheck
 {
     public class MailCheck
     {
-        public int DomainThreshold = 2;
-        public int SecondLevelThreshold = 2;
-        public int TopLevelThreshold = 2;
+        public int DomainThreshold = 3;
+        public int SecondLevelThreshold = 3;
+        public int TopLevelThreshold = 3;
 
         public string[] DefaultDomains = new string[] { "msn.com", "bellsouth.net", "telus.net", "comcast.net", "optusnet.com.au", "earthlink.net", "qq.com", "sky.com", "icloud.com", "mac.com", "sympatico.ca", "googlemail.com", "att.net", "xtra.co.nz", "web.de", "cox.net", "gmail.com", "ymail.com", "aim.com", "rogers.com", "verizon.net", "rocketmail.com", "google.com", "optonline.net", "sbcglobal.net", "aol.com", "me.com", "btinternet.com", "charter.net", "shaw.ca" };
 
-        public string[] DefaultSecondLevelDomains = new string[] { "yahoo", "hotmail", "mail", "live", "outlook", "gmx" };
+        public string[] DefaultSecondLevelDomains = new string[] { "yahoo", "hotmail", "live", "outlook", "gmx" };
 
         public string[] DefaultTopLevelDomains = new string[] { "com", "com.au", "com.tw", "ca", "co.za", "co.nz", "co.uk", "de", "fr", "it", "ru", "net", "org", "edu", "gov", "jp", "nl", "kr", "se", "eu", "ie", "co.il", "us", "at", "be", "dk", "hk", "es", "gr", "ch", "no", "cz", "in", "net", "net.au", "info", "biz", "mil", "co.jp", "sg", "hu", "uk" };
 
@@ -113,7 +113,7 @@ namespace MailCheck
             threshold = threshold > 0 ? threshold : TopLevelThreshold;
             double dist;
             double minDist = double.PositiveInfinity;
-            string closestDomain = "";
+            string closestDomain = "com";
 
             if (String.IsNullOrEmpty(domain) || domains.Length <= 0)
             {
@@ -126,7 +126,7 @@ namespace MailCheck
                 {
                     return domain;
                 }
-                dist = Sift4.SimplestDistance(domain, domains[i], threshold); // dist = distanceFunction(domain, domains[i]);
+                dist = Sift4.SimplestDistance(domain, domains[i], threshold); 
                 if (dist < minDist)
                 {
                     minDist = dist;
