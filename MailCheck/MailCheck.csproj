@@ -25,7 +25,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE$defineconstantswithprefix$</DefineConstants>
@@ -34,14 +33,12 @@
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <PackageId>MailCheck</PackageId>
-    <PackageVersion Condition="'$(PackageVersion)' == ''">1.0.3</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">2.0.0</PackageVersion>
     <Title>MailCheck</Title>
     <Authors>Werner Brynard</Authors>
     <Owners>Werner Brynard</Owners>
     <Summary>A simple Entry custom renderer for Xamarin Forms that  suggests popular email addresses.</Summary>
     <Description>A simple Entry custom renderer for Xamarin Forms that  suggests popular email addresses.</Description>
-    <PackageReleaseNotes>
-    </PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/WernerBrynard/mailcheck</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/WernerBrynard/mailcheck/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>Copyright © Werner Brynard</Copyright>
